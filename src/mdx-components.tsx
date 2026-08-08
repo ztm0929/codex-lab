@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { ImageZoom } from 'fumadocs-ui/components/image-zoom';
 import { CodeBlock, Pre } from 'fumadocs-ui/components/codeblock';
 import { TerminalPlayer } from '@/components/terminal-player';
+import { OSTabs } from '@/components/os-tabs';
 import type { StaticImageData } from 'next/image';
 import type { MDXComponents } from 'mdx/types';
 import type { ReactNode } from 'react';
@@ -59,6 +60,7 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
     },
     ...AccordionComponents,
     ...TabsComponents,
+    OSTabs,
     ...components,
   };
 }
